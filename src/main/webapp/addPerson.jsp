@@ -18,13 +18,13 @@
   storage.add(person,person.getTest());
 %>
 <c:if test="${person.test}">
-Zostales zarejestrowany w tej sesji
+Zostaleś już zarejestrowany w tej sesji
 </c:if>
-<p>Following person has been added to storage: </p>
+
 ${storage.status}
 <% person.setTest(true);%>
 <p>
-  <a href="showAllPersons.jsp">Show all persons</a>
+  <a href="showAllPersons.jsp">Wszystkie osoby zarejestrowane</a>
 </p>
 </body>
 </html>

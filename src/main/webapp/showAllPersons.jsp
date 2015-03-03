@@ -12,11 +12,11 @@
 <jsp:useBean id="storage" class="com.example.servletjspdemo.service.StorageService" scope="application" />
 <%
   for (Person person : storage.getAllPersons()) {
-	  out.println("<p>First name: " + person.getFirstName()   + "</p>");
+	  out.println("<p>Imię: " + person.getFirstName() + " Nazwisko: "+person.getName()+ " Info:"+person.getInfo()  + "</p>");
   }
 %>
 <p>
-  <a href="getPersonData.jsp">Add another person</a>
+  <a href="index.jsp">Wróć do formularza</a>
 </p>
 
 </body>

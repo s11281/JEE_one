@@ -20,11 +20,13 @@ public class StorageService {
 	
 	public void add(Person person,Boolean test){
 		if(db.size()<=5 && !test){
-		Person newPerson = new Person(person.getFirstName(), person.getName() ,person.getEmail());
+		Person newPerson = new Person(person.getFirstName(), person.getName(), person.getEmail(), 
+				person.getEmail_pow(),person.getPracodawca() ,person.getInfo(), person.getInfo_box(), 
+				person.getInfo2() );
 		db.add(newPerson);
-		status="zapisano";}
+		status="Zostałeś zarejestrowany";}
 		else
-		{status="nie zapisano";}
+		{status="Brak miejsc";}
 	}
 	
 	public List<Person> getAllPersons(){
